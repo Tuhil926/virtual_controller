@@ -47,6 +47,7 @@ try:
     # controller.emit(uinput.BTN_Y, 1)
     # time.sleep(0.1)
     controller.emit(uinput.BTN_Y, 0)
+    print("Connected to arduino")
     while True:
         arduino_outputs = arduino_connection.readline().split()
         if len(arduino_outputs) != 4:
